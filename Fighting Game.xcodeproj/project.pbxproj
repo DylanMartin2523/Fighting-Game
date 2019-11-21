@@ -66,6 +66,7 @@
 		4A743BAA22E758AF00202DA4 /* ThrowButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A743BA922E758AF00202DA4 /* ThrowButton.png */; };
 		4A789EBF2343F2A7001AFA04 /* fireRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A789EBE2343F2A7001AFA04 /* fireRight.sks */; };
 		4A789EC12343F362001AFA04 /* fireLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A789EC02343F362001AFA04 /* fireLeft.sks */; };
+		4A958126238732B20080F751 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A958125238732B20080F751 /* bullet.png */; };
 		4AB533F122DE6E440007FA30 /* PunchWindUpLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */; };
 		4AB533F222DE6E440007FA30 /* PunchWindUpRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */; };
 		4AB533F622DE92970007FA30 /* background-pixilart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533F522DE92970007FA30 /* background-pixilart.png */; };
@@ -76,7 +77,6 @@
 		4AB64C5A234D23030040A9FF /* ShootWindUpLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB64C58234D23020040A9FF /* ShootWindUpLeft.png */; };
 		4AB64C5B234D23030040A9FF /* ShootWindUpRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB64C59234D23030040A9FF /* ShootWindUpRight.png */; };
 		4AC6D4C5234BF166008F205B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6D4C4234BF166008F205B /* GameScene.sks */; };
-		4AC807922331687700D8C5CF /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC807912331687700D8C5CF /* bullet.png */; };
 		4ACDBE1D22C80D9E0078E0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDBE1C22C80D9E0078E0C1 /* AppDelegate.swift */; };
 		4ACDBE2122C80D9E0078E0C1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4ACDBE2022C80D9E0078E0C1 /* Actions.sks */; };
 		4ACDBE2322C80D9E0078E0C1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACDBE2222C80D9E0078E0C1 /* GameScene.swift */; };
@@ -148,6 +148,7 @@
 		4A743BA922E758AF00202DA4 /* ThrowButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThrowButton.png; sourceTree = "<group>"; };
 		4A789EBE2343F2A7001AFA04 /* fireRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireRight.sks; sourceTree = "<group>"; };
 		4A789EC02343F362001AFA04 /* fireLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireLeft.sks; sourceTree = "<group>"; };
+		4A958125238732B20080F751 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PunchWindUpLeft.png; sourceTree = "<group>"; };
 		4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PunchWindUpRight.png; sourceTree = "<group>"; };
 		4AB533F522DE92970007FA30 /* background-pixilart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-pixilart.png"; sourceTree = "<group>"; };
@@ -157,7 +158,6 @@
 		4AB64C58234D23020040A9FF /* ShootWindUpLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShootWindUpLeft.png; sourceTree = "<group>"; };
 		4AB64C59234D23030040A9FF /* ShootWindUpRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShootWindUpRight.png; sourceTree = "<group>"; };
 		4AC6D4C4234BF166008F205B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		4AC807912331687700D8C5CF /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bullet.png; path = ../../Downloads/bullet.png; sourceTree = "<group>"; };
 		4ACDBE1922C80D9E0078E0C1 /* Fighting Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fighting Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACDBE1C22C80D9E0078E0C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ACDBE2022C80D9E0078E0C1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -210,8 +210,8 @@
 				4A330E5922EE2AC4007A05A0 /* machine2b.png */,
 				4A330E5622EE2AC3007A05A0 /* table1.png */,
 				4A330E4922EE226F007A05A0 /* door1.png */,
-				4AC807912331687700D8C5CF /* bullet.png */,
 				4A330E4A22EE226F007A05A0 /* door2.png */,
+				4A958125238732B20080F751 /* bullet.png */,
 				4A330E5222EE24D4007A05A0 /* door3.png */,
 				4A330E5322EE24D4007A05A0 /* door4.png */,
 				4A330E4422EE2167007A05A0 /* wall1.png */,
@@ -355,7 +355,6 @@
 				4A330E5D22EE2AC4007A05A0 /* machine2b.png in Resources */,
 				4A18126622D14E6600D15BE3 /* DashButton.png in Resources */,
 				4A18126822D1703600D15BE3 /* Dash.atlas in Resources */,
-				4AC807922331687700D8C5CF /* bullet.png in Resources */,
 				4ACDBE2822C80D9E0078E0C1 /* Main.storyboard in Resources */,
 				4A4A362723468C03007F6635 /* Assets.xcassets in Resources */,
 				4A743BAA22E758AF00202DA4 /* ThrowButton.png in Resources */,
@@ -366,6 +365,7 @@
 				4AB533F622DE92970007FA30 /* background-pixilart.png in Resources */,
 				4A29DF5222CAD93F00C12617 /* HumanoidPunchRight.png in Resources */,
 				4A4A362323466812007F6635 /* wall5 reverse.png in Resources */,
+				4A958126238732B20080F751 /* bullet.png in Resources */,
 				4A743BA722E22C8300202DA4 /* HumanoidDaggerRight.png in Resources */,
 				4A63B81622E8A1FD0068EC2E /* InvArrowRight.png in Resources */,
 				4A3B305523284218001B7A73 /* HumanoidPistolLeft.png in Resources */,
