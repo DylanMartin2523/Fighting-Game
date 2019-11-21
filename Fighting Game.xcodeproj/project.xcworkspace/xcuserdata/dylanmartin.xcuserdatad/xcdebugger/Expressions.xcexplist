@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Humanoid.invDecrease():Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentInventorySlot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.inventoryIndex(_:):Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentInventorySlot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.didBegin(_:):GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bodyA == childNode(withName: &quot;floor&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "enemy.punchDetected">
+            </PersistentString>
+            <PersistentString
+               value = "enemy.punchActive">
+            </PersistentString>
+            <PersistentString
+               value = "humanoid.lastWeaponThrown()">
+            </PersistentString>
+            <PersistentString
+               value = "bodyB == childnode(withName: &quot;bullet&quot;) &amp;&amp; bodyA == childnode(withName: &quot;floor&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.getWeapon():Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inventory[currentInventorySlot]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.beforeThrow():Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentInventorySlot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.invIncrease():Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentInventorySlot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.touchesBegan(_:with:):GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bullet.physicsBody">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.throwObject(obj:x:y:):Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentInventorySlot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.animateHuman(stickActive:):Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Int((humanoid.physicsBody?.velocity.dx)!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.clearInvDisplay():GameScene.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Enemy.move():Enemy.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "xDist &lt; 0">
+            </PersistentString>
+            <PersistentString
+               value = "animationActive">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.animateHuman():GameScene.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Weapon.makeWeapon(_:):Weapon.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "weapon.physicsBody!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.animateHuman(stickActive:x:):Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "throwActive">
+            </PersistentString>
+            <PersistentString
+               value = "animationActive">
+            </PersistentString>
+            <PersistentString
+               value = "x.sign">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.displayInventory():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "weaponLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "humanoid.inventory">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.punch(direction:complete:):Humanoid.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inventory[currentInventorySlot].range">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Humanoid.jumpHumananoid(jumpActive:dashActive:):Humanoid.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
