@@ -24,10 +24,6 @@
 		4A32EF6F22D5429600B79198 /* DashLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF6E22D5429600B79198 /* DashLeft.atlas */; };
 		4A32EF7122D5577000B79198 /* Humanoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32EF7022D5577000B79198 /* Humanoid.swift */; };
 		4A32EF7B22D7B80500B79198 /* dagger.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF7A22D7B80500B79198 /* dagger.png */; };
-		4A32EF8622D8384500B79198 /* Arm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF8222D8384500B79198 /* Arm.jpg */; };
-		4A32EF8722D8384500B79198 /* Head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF8322D8384500B79198 /* Head.jpg */; };
-		4A32EF8822D8384500B79198 /* Torso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF8422D8384500B79198 /* Torso.jpg */; };
-		4A32EF8922D8384500B79198 /* Leg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF8522D8384500B79198 /* Leg.jpg */; };
 		4A32EF9222DA7DAE00B79198 /* HumanoidWalkRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EF8E22DA7DAD00B79198 /* HumanoidWalkRight.atlas */; };
 		4A32EFA122DA7F5400B79198 /* HumanoidWalkLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4A32EFA022DA7F5400B79198 /* HumanoidWalkLeft.atlas */; };
 		4A330E4522EE2167007A05A0 /* wall1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A330E4422EE2167007A05A0 /* wall1.png */; };
@@ -66,7 +62,8 @@
 		4A743BAA22E758AF00202DA4 /* ThrowButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A743BA922E758AF00202DA4 /* ThrowButton.png */; };
 		4A789EBF2343F2A7001AFA04 /* fireRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A789EBE2343F2A7001AFA04 /* fireRight.sks */; };
 		4A789EC12343F362001AFA04 /* fireLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A789EC02343F362001AFA04 /* fireLeft.sks */; };
-		4A958126238732B20080F751 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A958125238732B20080F751 /* bullet.png */; };
+		4A958128238735400080F751 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A958127238735400080F751 /* bullet.png */; };
+		4A95812A238737120080F751 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A958129238737110080F751 /* Images.xcassets */; };
 		4AB533F122DE6E440007FA30 /* PunchWindUpLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */; };
 		4AB533F222DE6E440007FA30 /* PunchWindUpRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */; };
 		4AB533F622DE92970007FA30 /* background-pixilart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533F522DE92970007FA30 /* background-pixilart.png */; };
@@ -106,10 +103,6 @@
 		4A32EF6E22D5429600B79198 /* DashLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = DashLeft.atlas; sourceTree = "<group>"; };
 		4A32EF7022D5577000B79198 /* Humanoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Humanoid.swift; sourceTree = "<group>"; };
 		4A32EF7A22D7B80500B79198 /* dagger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dagger.png; sourceTree = "<group>"; };
-		4A32EF8222D8384500B79198 /* Arm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Arm.jpg; sourceTree = "<group>"; };
-		4A32EF8322D8384500B79198 /* Head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Head.jpg; sourceTree = "<group>"; };
-		4A32EF8422D8384500B79198 /* Torso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Torso.jpg; sourceTree = "<group>"; };
-		4A32EF8522D8384500B79198 /* Leg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Leg.jpg; sourceTree = "<group>"; };
 		4A32EF8E22DA7DAD00B79198 /* HumanoidWalkRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = HumanoidWalkRight.atlas; sourceTree = "<group>"; };
 		4A32EFA022DA7F5400B79198 /* HumanoidWalkLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = HumanoidWalkLeft.atlas; sourceTree = "<group>"; };
 		4A330E4422EE2167007A05A0 /* wall1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall1.png; sourceTree = "<group>"; };
@@ -148,7 +141,8 @@
 		4A743BA922E758AF00202DA4 /* ThrowButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThrowButton.png; sourceTree = "<group>"; };
 		4A789EBE2343F2A7001AFA04 /* fireRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireRight.sks; sourceTree = "<group>"; };
 		4A789EC02343F362001AFA04 /* fireLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireLeft.sks; sourceTree = "<group>"; };
-		4A958125238732B20080F751 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		4A958127238735400080F751 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		4A958129238737110080F751 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 		4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PunchWindUpLeft.png; sourceTree = "<group>"; };
 		4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PunchWindUpRight.png; sourceTree = "<group>"; };
 		4AB533F522DE92970007FA30 /* background-pixilart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-pixilart.png"; sourceTree = "<group>"; };
@@ -184,34 +178,111 @@
 		4A32EF7522D7B24F00B79198 /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
+				4A95812E238737BD0080F751 /* Punch */,
+				4A95812D238737940080F751 /* Pistol */,
+				4A95812B238737430080F751 /* Dagger */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
 		};
-		4ACDBE1022C80D9E0078E0C1 = {
+		4A95812B238737430080F751 /* Dagger */ = {
 			isa = PBXGroup;
 			children = (
-				4A4A362523468C03007F6635 /* Assets.xcassets */,
-				4ACDBE1B22C80D9E0078E0C1 /* Fighting Game */,
-				4ACDBE1A22C80D9E0078E0C1 /* Products */,
-				4AB533F522DE92970007FA30 /* background-pixilart.png */,
 				4A32EF7A22D7B80500B79198 /* dagger.png */,
-				4A32EF7522D7B24F00B79198 /* Weapons */,
-				4ACDBE3422C80E580078E0C1 /* BlackBackground.png */,
+				4A743BA622E22C8300202DA4 /* HumanoidDaggerLeft.png */,
+				4A743BA522E22C8300202DA4 /* HumanoidDaggerRight.png */,
+			);
+			path = Dagger;
+			sourceTree = "<group>";
+		};
+		4A95812D238737940080F751 /* Pistol */ = {
+			isa = PBXGroup;
+			children = (
+				4A72D40E22EB871000F33935 /* Pistol.png */,
+				4A3B305323284218001B7A73 /* HumanoidPistolLeft.png */,
+				4A3B305223284218001B7A73 /* HumanoidPistolRight.png */,
+				4A958127238735400080F751 /* bullet.png */,
+			);
+			path = Pistol;
+			sourceTree = "<group>";
+		};
+		4A95812E238737BD0080F751 /* Punch */ = {
+			isa = PBXGroup;
+			children = (
+				4A29DF5122CAD93F00C12617 /* HumanoidPunchRight.png */,
+				4A29DF5322CAD94A00C12617 /* HumanoidPunchLeft.png */,
+			);
+			path = Punch;
+			sourceTree = "<group>";
+		};
+		4A95812F2387380D0080F751 /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				4A958131238738210080F751 /* Punch */,
+				4A9581302387381B0080F751 /* Shoot */,
+			);
+			path = Enemy;
+			sourceTree = "<group>";
+		};
+		4A9581302387381B0080F751 /* Shoot */ = {
+			isa = PBXGroup;
+			children = (
+				4AB64C58234D23020040A9FF /* ShootWindUpLeft.png */,
+				4AB64C59234D23030040A9FF /* ShootWindUpRight.png */,
+			);
+			path = Shoot;
+			sourceTree = "<group>";
+		};
+		4A958131238738210080F751 /* Punch */ = {
+			isa = PBXGroup;
+			children = (
+				4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */,
+				4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */,
+			);
+			path = Punch;
+			sourceTree = "<group>";
+		};
+		4A958132238738310080F751 /* Humanoid */ = {
+			isa = PBXGroup;
+			children = (
+				4A63B81C22E8B8A10068EC2E /* ArmLeft.png */,
+				4A63B81D22E8B8A10068EC2E /* ArmRight.png */,
+				4A29DF4F22CAD73800C12617 /* HumanoidStopped.png */,
+				4A63B82122EA16CF0068EC2E /* ThrowLeft.png */,
+				4A63B82022EA16CE0068EC2E /* ThrowRight.png */,
+				4A63B81822E8B6A80068EC2E /* ThrowBodyLeft.png */,
+				4A63B81922E8B6A80068EC2E /* ThrowBodyRight.png */,
+			);
+			path = Humanoid;
+			sourceTree = "<group>";
+		};
+		4A958134238739E60080F751 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4A29DF4D22CACA4600C12617 /* Base.png */,
 				4A63B81522E8A1FD0068EC2E /* InvArrowLeft.png */,
 				4A63B81422E8A1FD0068EC2E /* InvArrowRight.png */,
 				4A29DF4B22CACA3600C12617 /* Stick.png */,
+				4A29DF5522CADA1400C12617 /* LeftButton.png */,
+				4A29DF5622CADA1400C12617 /* RightButton.png */,
+				4A743BA922E758AF00202DA4 /* ThrowButton.png */,
+				4A18126422D14E6600D15BE3 /* DashButton.png */,
+				4A18126322D14E6600D15BE3 /* JumpButton.png */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4A95813523873A3C0080F751 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
 				4A330E5722EE2AC3007A05A0 /* machine1.png */,
 				4AB64C33234BF7430040A9FF /* RaillingMid.png */,
-				4AB64C58234D23020040A9FF /* ShootWindUpLeft.png */,
-				4AB64C59234D23030040A9FF /* ShootWindUpRight.png */,
 				4AB64C36234BF7FE0040A9FF /* RaillingEnd.png */,
 				4A330E5822EE2AC3007A05A0 /* machine2a.png */,
 				4A330E5922EE2AC4007A05A0 /* machine2b.png */,
 				4A330E5622EE2AC3007A05A0 /* table1.png */,
 				4A330E4922EE226F007A05A0 /* door1.png */,
 				4A330E4A22EE226F007A05A0 /* door2.png */,
-				4A958125238732B20080F751 /* bullet.png */,
 				4A330E5222EE24D4007A05A0 /* door3.png */,
 				4A330E5322EE24D4007A05A0 /* door4.png */,
 				4A330E4422EE2167007A05A0 /* wall1.png */,
@@ -221,35 +292,34 @@
 				4A330E4722EE226F007A05A0 /* wall3.png */,
 				4A330E4B22EE226F007A05A0 /* wall4.png */,
 				4A330E4822EE226F007A05A0 /* wall5.png */,
-				4A29DF4D22CACA4600C12617 /* Base.png */,
-				4A29DF4F22CAD73800C12617 /* HumanoidStopped.png */,
 				4A743BA122E0E1CC00202DA4 /* BrickWhite.png */,
-				4A72D40E22EB871000F33935 /* Pistol.png */,
-				4A63B82122EA16CF0068EC2E /* ThrowLeft.png */,
-				4A63B82022EA16CE0068EC2E /* ThrowRight.png */,
-				4A743BA622E22C8300202DA4 /* HumanoidDaggerLeft.png */,
-				4A743BA922E758AF00202DA4 /* ThrowButton.png */,
-				4A63B81822E8B6A80068EC2E /* ThrowBodyLeft.png */,
-				4A63B81922E8B6A80068EC2E /* ThrowBodyRight.png */,
-				4A743BA522E22C8300202DA4 /* HumanoidDaggerRight.png */,
-				4A63B81C22E8B8A10068EC2E /* ArmLeft.png */,
-				4A63B81D22E8B8A10068EC2E /* ArmRight.png */,
-				4A29DF5122CAD93F00C12617 /* HumanoidPunchRight.png */,
-				4A743BA322E0E57500202DA4 /* WhiteBackground2.png */,
-				4A3B305323284218001B7A73 /* HumanoidPistolLeft.png */,
-				4A3B305223284218001B7A73 /* HumanoidPistolRight.png */,
 				4AB533F822E0D6060007FA30 /* Brick.png */,
-				4A29DF5322CAD94A00C12617 /* HumanoidPunchLeft.png */,
-				4A29DF5522CADA1400C12617 /* LeftButton.png */,
-				4A29DF5622CADA1400C12617 /* RightButton.png */,
-				4A18126422D14E6600D15BE3 /* DashButton.png */,
-				4A18126322D14E6600D15BE3 /* JumpButton.png */,
-				4A32EF8222D8384500B79198 /* Arm.jpg */,
-				4A32EF8322D8384500B79198 /* Head.jpg */,
-				4A32EF8522D8384500B79198 /* Leg.jpg */,
-				4A32EF8422D8384500B79198 /* Torso.jpg */,
-				4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */,
-				4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+		4A95813623873A720080F751 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				4ACDBE3422C80E580078E0C1 /* BlackBackground.png */,
+				4AB533F522DE92970007FA30 /* background-pixilart.png */,
+				4A743BA322E0E57500202DA4 /* WhiteBackground2.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		4ACDBE1022C80D9E0078E0C1 = {
+			isa = PBXGroup;
+			children = (
+				4A4A362523468C03007F6635 /* Assets.xcassets */,
+				4ACDBE1B22C80D9E0078E0C1 /* Fighting Game */,
+				4ACDBE1A22C80D9E0078E0C1 /* Products */,
+				4A958134238739E60080F751 /* Buttons */,
+				4A958132238738310080F751 /* Humanoid */,
+				4A95812F2387380D0080F751 /* Enemy */,
+				4A32EF7522D7B24F00B79198 /* Weapons */,
+				4A95813523873A3C0080F751 /* Tiles */,
+				4A95813623873A720080F751 /* Backgrounds */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -282,6 +352,7 @@
 				4ACDBE2B22C80DA40078E0C1 /* LaunchScreen.storyboard */,
 				4ACDBE2E22C80DA40078E0C1 /* Info.plist */,
 				4ACDBE2922C80DA40078E0C1 /* Assets.xcassets */,
+				4A958129238737110080F751 /* Images.xcassets */,
 				4A32EFA022DA7F5400B79198 /* HumanoidWalkLeft.atlas */,
 				4A32EF8E22DA7DAD00B79198 /* HumanoidWalkRight.atlas */,
 				4A18125A22CED29200D15BE3 /* Floor.atlas */,
@@ -360,17 +431,17 @@
 				4A743BAA22E758AF00202DA4 /* ThrowButton.png in Resources */,
 				4A63B82322EA16CF0068EC2E /* ThrowLeft.png in Resources */,
 				4A63B81B22E8B6A80068EC2E /* ThrowBodyRight.png in Resources */,
+				4A95812A238737120080F751 /* Images.xcassets in Resources */,
 				4A330E5522EE24D5007A05A0 /* door4.png in Resources */,
 				4AB533F722DE929D0007FA30 /* Background.atlas in Resources */,
 				4AB533F622DE92970007FA30 /* background-pixilart.png in Resources */,
 				4A29DF5222CAD93F00C12617 /* HumanoidPunchRight.png in Resources */,
 				4A4A362323466812007F6635 /* wall5 reverse.png in Resources */,
-				4A958126238732B20080F751 /* bullet.png in Resources */,
+				4A958128238735400080F751 /* bullet.png in Resources */,
 				4A743BA722E22C8300202DA4 /* HumanoidDaggerRight.png in Resources */,
 				4A63B81622E8A1FD0068EC2E /* InvArrowRight.png in Resources */,
 				4A3B305523284218001B7A73 /* HumanoidPistolLeft.png in Resources */,
 				4A330E5A22EE2AC4007A05A0 /* table1.png in Resources */,
-				4A32EF8922D8384500B79198 /* Leg.jpg in Resources */,
 				4A330E5C22EE2AC4007A05A0 /* machine2a.png in Resources */,
 				4A29DF4E22CACA4600C12617 /* Base.png in Resources */,
 				4A29DF5022CAD73800C12617 /* HumanoidStopped.png in Resources */,
@@ -385,7 +456,6 @@
 				4ACDBE2A22C80DA40078E0C1 /* Assets.xcassets in Resources */,
 				4A72D40F22EB871100F33935 /* Pistol.png in Resources */,
 				4A330E5B22EE2AC4007A05A0 /* machine1.png in Resources */,
-				4A32EF8722D8384500B79198 /* Head.jpg in Resources */,
 				4AB64C5B234D23030040A9FF /* ShootWindUpRight.png in Resources */,
 				4A789EC12343F362001AFA04 /* fireLeft.sks in Resources */,
 				4A18125B22CED29200D15BE3 /* Floor.atlas in Resources */,
@@ -404,7 +474,6 @@
 				4A789EBF2343F2A7001AFA04 /* fireRight.sks in Resources */,
 				4A63B81722E8A1FD0068EC2E /* InvArrowLeft.png in Resources */,
 				4A29DF5722CADA1400C12617 /* LeftButton.png in Resources */,
-				4A32EF8822D8384500B79198 /* Torso.jpg in Resources */,
 				4A3B305423284218001B7A73 /* HumanoidPistolRight.png in Resources */,
 				4A330E5422EE24D5007A05A0 /* door3.png in Resources */,
 				4A330E4D22EE226F007A05A0 /* wall3.png in Resources */,
@@ -419,7 +488,6 @@
 				4AB533F222DE6E440007FA30 /* PunchWindUpRight.png in Resources */,
 				4A29DF4C22CACA3600C12617 /* Stick.png in Resources */,
 				4AC6D4C5234BF166008F205B /* GameScene.sks in Resources */,
-				4A32EF8622D8384500B79198 /* Arm.jpg in Resources */,
 				4A743BA822E22C8300202DA4 /* HumanoidDaggerLeft.png in Resources */,
 				4A330E4F22EE226F007A05A0 /* door1.png in Resources */,
 			);
