@@ -64,6 +64,7 @@
 		4A789EC12343F362001AFA04 /* fireLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A789EC02343F362001AFA04 /* fireLeft.sks */; };
 		4A958128238735400080F751 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A958127238735400080F751 /* bullet.png */; };
 		4A95812A238737120080F751 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A958129238737110080F751 /* Images.xcassets */; };
+		4A95813A23873F290080F751 /* NightSky.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A95813923873F290080F751 /* NightSky.png */; };
 		4AB533F122DE6E440007FA30 /* PunchWindUpLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */; };
 		4AB533F222DE6E440007FA30 /* PunchWindUpRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */; };
 		4AB533F622DE92970007FA30 /* background-pixilart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB533F522DE92970007FA30 /* background-pixilart.png */; };
@@ -82,6 +83,10 @@
 		4ACDBE2A22C80DA40078E0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACDBE2922C80DA40078E0C1 /* Assets.xcassets */; };
 		4ACDBE2D22C80DA40078E0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACDBE2B22C80DA40078E0C1 /* LaunchScreen.storyboard */; };
 		4ACDBE3522C80E580078E0C1 /* BlackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACDBE3422C80E580078E0C1 /* BlackBackground.png */; };
+		4AEE1EB823BD8A9600B4EDF9 /* Arena.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4AEE1EB723BD8A9600B4EDF9 /* Arena.sks */; };
+		4AFF355623BD97CB005850FF /* CounterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFF355523BD97CB005850FF /* CounterButton.png */; };
+		4AFF355923BDB6F6005850FF /* Counter.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4AFF355823BDB6F6005850FF /* Counter.atlas */; };
+		4AFF355B23BDBED2005850FF /* CounterLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4AFF355A23BDBED2005850FF /* CounterLeft.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +148,7 @@
 		4A789EC02343F362001AFA04 /* fireLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireLeft.sks; sourceTree = "<group>"; };
 		4A958127238735400080F751 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		4A958129238737110080F751 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
+		4A95813923873F290080F751 /* NightSky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NightSky.png; sourceTree = "<group>"; };
 		4AB533EF22DE6E430007FA30 /* PunchWindUpLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PunchWindUpLeft.png; sourceTree = "<group>"; };
 		4AB533F022DE6E430007FA30 /* PunchWindUpRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PunchWindUpRight.png; sourceTree = "<group>"; };
 		4AB533F522DE92970007FA30 /* background-pixilart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-pixilart.png"; sourceTree = "<group>"; };
@@ -162,6 +168,10 @@
 		4ACDBE2C22C80DA40078E0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ACDBE2E22C80DA40078E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACDBE3422C80E580078E0C1 /* BlackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackBackground.png; sourceTree = "<group>"; };
+		4AEE1EB723BD8A9600B4EDF9 /* Arena.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Arena.sks; sourceTree = "<group>"; };
+		4AFF355523BD97CB005850FF /* CounterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CounterButton.png; sourceTree = "<group>"; };
+		4AFF355823BDB6F6005850FF /* Counter.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Counter.atlas; sourceTree = SOURCE_ROOT; };
+		4AFF355A23BDBED2005850FF /* CounterLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = CounterLeft.atlas; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +273,7 @@
 				4A63B81522E8A1FD0068EC2E /* InvArrowLeft.png */,
 				4A63B81422E8A1FD0068EC2E /* InvArrowRight.png */,
 				4A29DF4B22CACA3600C12617 /* Stick.png */,
+				4AFF355523BD97CB005850FF /* CounterButton.png */,
 				4A29DF5522CADA1400C12617 /* LeftButton.png */,
 				4A29DF5622CADA1400C12617 /* RightButton.png */,
 				4A743BA922E758AF00202DA4 /* ThrowButton.png */,
@@ -302,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				4ACDBE3422C80E580078E0C1 /* BlackBackground.png */,
+				4A95813923873F290080F751 /* NightSky.png */,
 				4AB533F522DE92970007FA30 /* background-pixilart.png */,
 				4A743BA322E0E57500202DA4 /* WhiteBackground2.png */,
 			);
@@ -344,6 +356,7 @@
 				4A789EC02343F362001AFA04 /* fireLeft.sks */,
 				4ACDBE2222C80D9E0078E0C1 /* GameScene.swift */,
 				4AC6D4C4234BF166008F205B /* GameScene.sks */,
+				4AEE1EB723BD8A9600B4EDF9 /* Arena.sks */,
 				4A743B9F22E0DEBF00202DA4 /* Main.swift */,
 				4A18125822CED1F800D15BE3 /* Tile.sks */,
 				4A18125622CEB38D00D15BE3 /* Weapon.swift */,
@@ -353,6 +366,8 @@
 				4ACDBE2E22C80DA40078E0C1 /* Info.plist */,
 				4ACDBE2922C80DA40078E0C1 /* Assets.xcassets */,
 				4A958129238737110080F751 /* Images.xcassets */,
+				4AFF355A23BDBED2005850FF /* CounterLeft.atlas */,
+				4AFF355823BDB6F6005850FF /* Counter.atlas */,
 				4A32EFA022DA7F5400B79198 /* HumanoidWalkLeft.atlas */,
 				4A32EF8E22DA7DAD00B79198 /* HumanoidWalkRight.atlas */,
 				4A18125A22CED29200D15BE3 /* Floor.atlas */,
@@ -430,6 +445,7 @@
 				4A4A362723468C03007F6635 /* Assets.xcassets in Resources */,
 				4A743BAA22E758AF00202DA4 /* ThrowButton.png in Resources */,
 				4A63B82322EA16CF0068EC2E /* ThrowLeft.png in Resources */,
+				4AFF355923BDB6F6005850FF /* Counter.atlas in Resources */,
 				4A63B81B22E8B6A80068EC2E /* ThrowBodyRight.png in Resources */,
 				4A95812A238737120080F751 /* Images.xcassets in Resources */,
 				4A330E5522EE24D5007A05A0 /* door4.png in Resources */,
@@ -440,10 +456,12 @@
 				4A958128238735400080F751 /* bullet.png in Resources */,
 				4A743BA722E22C8300202DA4 /* HumanoidDaggerRight.png in Resources */,
 				4A63B81622E8A1FD0068EC2E /* InvArrowRight.png in Resources */,
+				4AFF355B23BDBED2005850FF /* CounterLeft.atlas in Resources */,
 				4A3B305523284218001B7A73 /* HumanoidPistolLeft.png in Resources */,
 				4A330E5A22EE2AC4007A05A0 /* table1.png in Resources */,
 				4A330E5C22EE2AC4007A05A0 /* machine2a.png in Resources */,
 				4A29DF4E22CACA4600C12617 /* Base.png in Resources */,
+				4A95813A23873F290080F751 /* NightSky.png in Resources */,
 				4A29DF5022CAD73800C12617 /* HumanoidStopped.png in Resources */,
 				4A330E5022EE226F007A05A0 /* door2.png in Resources */,
 				4A32EFA122DA7F5400B79198 /* HumanoidWalkLeft.atlas in Resources */,
@@ -451,9 +469,11 @@
 				4A18125922CED1F800D15BE3 /* Tile.sks in Resources */,
 				4A29DF5422CAD94A00C12617 /* HumanoidPunchLeft.png in Resources */,
 				4AB533F922E0D6060007FA30 /* Brick.png in Resources */,
+				4AFF355623BD97CB005850FF /* CounterButton.png in Resources */,
 				4A32EF6F22D5429600B79198 /* DashLeft.atlas in Resources */,
 				4A63B81E22E8B8A10068EC2E /* ArmLeft.png in Resources */,
 				4ACDBE2A22C80DA40078E0C1 /* Assets.xcassets in Resources */,
+				4AEE1EB823BD8A9600B4EDF9 /* Arena.sks in Resources */,
 				4A72D40F22EB871100F33935 /* Pistol.png in Resources */,
 				4A330E5B22EE2AC4007A05A0 /* machine1.png in Resources */,
 				4AB64C5B234D23030040A9FF /* ShootWindUpRight.png in Resources */,
@@ -583,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -639,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

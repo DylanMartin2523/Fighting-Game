@@ -15,10 +15,10 @@
             timestampString = "591826499.347793"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "326"
-            endingLineNumber = "326"
-            landmarkName = "touchesMoved(_:with:)"
-            landmarkType = "7">
+            startingLineNumber = "358"
+            endingLineNumber = "358"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -77,8 +77,8 @@
          <BreakpointContent
             uuid = "F898C260-D169-4DF2-83FA-F5B3487E35C9"
             shouldBeEnabled = "No"
-            ignoreCount = "0"
             condition = "(dist &lt; 7) == true"
+            ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fighting Game/Enemy.swift"
             timestampString = "591045147.872281"
@@ -118,10 +118,10 @@
             timestampString = "591826499.34831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
-            landmarkName = "touchesEnded(_:with:)"
-            landmarkType = "7">
+            startingLineNumber = "379"
+            endingLineNumber = "379"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -135,10 +135,10 @@
             timestampString = "591826499.348709"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "531"
-            endingLineNumber = "531"
-            landmarkName = "displayInventory()"
-            landmarkType = "7">
+            startingLineNumber = "587"
+            endingLineNumber = "587"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -152,10 +152,10 @@
             timestampString = "591826499.348995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "528"
-            endingLineNumber = "528"
-            landmarkName = "displayInventory()"
-            landmarkType = "7">
+            startingLineNumber = "584"
+            endingLineNumber = "584"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -169,10 +169,10 @@
             timestampString = "591826499.3493609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "450"
-            endingLineNumber = "450"
-            landmarkName = "didBegin(_:)"
-            landmarkType = "7">
+            startingLineNumber = "480"
+            endingLineNumber = "480"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -186,10 +186,10 @@
             timestampString = "591826499.349647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "521"
-            endingLineNumber = "521"
-            landmarkName = "DefaultPhysics(_:)"
-            landmarkType = "7">
+            startingLineNumber = "577"
+            endingLineNumber = "577"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -203,61 +203,10 @@
             timestampString = "591046819.5555609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "jumpHumananoid(dashActive:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "148347D6-D076-4E6E-9164-3622653BB8CF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Fighting Game/GameScene.swift"
-            timestampString = "591826499.349934"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
-            landmarkName = "touchesBegan(_:with:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "148347D6-D076-4E6E-9164-3622653BB8CF - 9cb6b3e99bf89168"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fighting_Game.GameScene.touchesBegan(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "Fighting Game"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dylanmartin/xcode/Fighting%20Game/Fighting%20Game/GameScene.swift"
-                  timestampString = "585865033.475135"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "229"
-                  endingLineNumber = "229"
-                  offsetFromSymbolStart = "2136">
-               </Location>
-               <Location
-                  uuid = "148347D6-D076-4E6E-9164-3622653BB8CF - 4e4396438c521f0a"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in Fighting_Game.GameScene.touchesBegan(_: Swift.Set&lt;__C.UITouch&gt;, with: Swift.Optional&lt;__C.UIEvent&gt;) -&gt; ()"
-                  moduleName = "Fighting Game"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dylanmartin/xcode/Fighting%20Game/Fighting%20Game/GameScene.swift"
-                  timestampString = "585865033.478729"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "230"
-                  endingLineNumber = "230"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -271,9 +220,9 @@
             timestampString = "591046819.556404"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "307"
-            endingLineNumber = "307"
-            landmarkName = "beforeThrow()"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
+            landmarkName = "move(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -288,26 +237,9 @@
             timestampString = "591046819.556528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
-            landmarkName = "throwObject(obj:x:y:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "69CAAC16-BFD8-42D9-8746-C4018115C2FE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Fighting Game/GameScene.swift"
-            timestampString = "591826499.350235"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
-            landmarkName = "touchesBegan(_:with:)"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
+            landmarkName = "beforeThrow()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -322,10 +254,10 @@
             timestampString = "591826499.350571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "300"
-            endingLineNumber = "300"
-            landmarkName = "touchesBegan(_:with:)"
-            landmarkType = "7">
+            startingLineNumber = "332"
+            endingLineNumber = "332"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -339,10 +271,10 @@
             timestampString = "591826499.35083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "520"
-            endingLineNumber = "520"
-            landmarkName = "DefaultPhysics(_:)"
-            landmarkType = "7">
+            startingLineNumber = "576"
+            endingLineNumber = "576"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -356,10 +288,10 @@
             timestampString = "591826499.351203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "348"
-            endingLineNumber = "348"
-            landmarkName = "touchesEnded(_:with:)"
-            landmarkType = "7">
+            startingLineNumber = "380"
+            endingLineNumber = "380"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -373,10 +305,10 @@
             timestampString = "591826499.351524"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "444"
-            endingLineNumber = "444"
-            landmarkName = "didBegin(_:)"
-            landmarkType = "7">
+            startingLineNumber = "474"
+            endingLineNumber = "474"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -390,10 +322,10 @@
             timestampString = "591826499.351805"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "445"
-            endingLineNumber = "445"
-            landmarkName = "didBegin(_:)"
-            landmarkType = "7">
+            startingLineNumber = "475"
+            endingLineNumber = "475"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -407,10 +339,10 @@
             timestampString = "591826499.35207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "481"
-            endingLineNumber = "481"
-            landmarkName = "didBegin(_:)"
-            landmarkType = "7">
+            startingLineNumber = "524"
+            endingLineNumber = "524"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -424,10 +356,10 @@
             timestampString = "591826499.352327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "didMove(to:)"
-            landmarkType = "7">
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -441,10 +373,10 @@
             timestampString = "591826499.352587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "didMove(to:)"
-            landmarkType = "7">
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -457,9 +389,73 @@
             filePath = "Fighting Game/Humanoid.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "shoot(direction:complete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97E0B03F-9946-4DEB-BBAA-DC6DFE6C55A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fighting Game/GameScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "615"
+            endingLineNumber = "615"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0327B681-8144-4F49-BA63-CF1171D537EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fighting Game/GameScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A8129E4-54F3-44D3-9D94-471859B0D868"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fighting Game/GameScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "633"
+            endingLineNumber = "633"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8DCEF69-D8AC-44A6-823C-A8E991197413"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fighting Game/Humanoid.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
+            landmarkName = "counter(dir:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

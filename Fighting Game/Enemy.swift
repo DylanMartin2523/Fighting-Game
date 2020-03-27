@@ -12,7 +12,7 @@ import SpriteKit
 class Enemy: NSObject, SKPhysicsContactDelegate {
 	
 	typealias CompletionHandler = (_ success:Bool) -> Void
-	private var name = String()
+	public var name = String()
 	private var health 	= Int()
 	private var bitmask:UInt32 = GameScene.CollisionTypes.enemy.rawValue
 	public var node:SKSpriteNode
@@ -24,7 +24,7 @@ class Enemy: NSObject, SKPhysicsContactDelegate {
 	public var punchActive = false
 	public var punchDetected = false
 	private var animationActive = false
-	private var windUpActive = false
+	public var windUpActive = false
 	private var type = enemyType.melee
 	
 	public enum enemyType {

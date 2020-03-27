@@ -42,6 +42,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 	private var stick = SKSpriteNode()
 	private var leftPunch = SKSpriteNode()
 	private var rightPunch = SKSpriteNode()
+	private var counterButton = SKSpriteNode()
 	private var jump = SKSpriteNode()
 	private var dash = SKSpriteNode()
 	private var jumpActive = false
@@ -59,15 +60,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 	
     
     override func didMove(to view: SKView) {
-	
 		self.scene!.view?.showsPhysics = true
-		self.physicsWorld.speed = 0.75
+		self.physicsWorld.speed = 1
 		physicsWorld.contactDelegate = self
 		self.camera = cam
 		dummyNode.name = "camNode"
 		addChild(cam)
-		cam.xScale = 0.9
-		cam.yScale = 0.9
+		cam.xScale = 1.5
+		cam.yScale = 1.5
 		
 		
 		
@@ -101,7 +101,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 		invRight.position = CGPoint(x: 25, y: 525)
 		cam.addChild(invRight)
 
-		humanoid.node().position = CGPoint(x: -162.887, y: -579.131)
+		humanoid.node().position = CGPoint(x: 0, y: 50)
 		addChild(humanoid.node())
 		
 //        let enemy = Enemy(name: "e1", health: 100, target: humanoid.node())
@@ -110,11 +110,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 //        enemyArray.append(enemy)
 //        enemy.setTarget(humanoid.node())
 //
-//        for i in enemyArray {
-//            addChild(i.node)
-//        }
+        for i in enemyArray {
+            addChild(i.node)
+        }
         
-//        addEnemyMelee(pos: CGPoint(x: 1673.362, y: -626.821))
+        addEnemyMelee(pos: CGPoint(x: 100, y: 50))
 //        addEnemyMelee(pos: CGPoint(x: 999.82, y: 119.821))
 //		addEnemyMelee(pos: CGPoint(x: 39.82, y: 119.821))
 //		addEnemyMelee(pos: CGPoint(x: 160, y: 833.707))
@@ -122,20 +122,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 //		addEnemyMelee(pos: CGPoint(x: 415.179, y: 833.707))
 //		addEnemyMelee(pos: CGPoint(x: 1080.178, y: 833.707))
 		
-		addEnemyRanged(pos: CGPoint(x: 1673.362, y: -626.821))
-        addEnemyRanged(pos: CGPoint(x: 999.82, y: 119.821))
-		addEnemyRanged(pos: CGPoint(x: 39.82, y: 119.821))
-		addEnemyRanged(pos: CGPoint(x: 160, y: 833.707))
-		addEnemyRanged(pos: CGPoint(x: 625.18, y: 833.707))
-		addEnemyRanged(pos: CGPoint(x: 415.179, y: 833.707))
-		addEnemyRanged(pos: CGPoint(x: 1080.178, y: 833.707))
+//		addEnemyRanged(pos: CGPoint(x: 1673.362, y: -626.821))
+//        addEnemyRanged(pos: CGPoint(x: 999.82, y: 119.821))
+//		addEnemyRanged(pos: CGPoint(x: 39.82, y: 119.821))
+//		addEnemyRanged(pos: CGPoint(x: 160, y: 833.707))
+//		addEnemyRanged(pos: CGPoint(x: 625.18, y: 833.707))
+//		addEnemyRanged(pos: CGPoint(x: 415.179, y: 833.707))
+//		addEnemyRanged(pos: CGPoint(x: 1080.178, y: 833.707))
 		
 		
 		
-		
-		let elevator = childNode(withName: "elevator")
-		let eleCon = SKConstraint.positionX(SKRange(lowerLimit: (elevator?.position.x)!))
-		elevator?.constraints = [eleCon]
+		// CODE FOR ELEVATOR
+//		let elevator = childNode(withName: "elevator")
+//		let eleCon = SKConstraint.positionX(SKRange(lowerLimit: (elevator?.position.x)!))
+//		elevator?.constraints = [eleCon]
 		
 		
 		// Code for JoyStick
@@ -191,6 +191,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 		throwButton.zPosition = 2
 		cam.addChild(throwButton)
 		
+		// Counter
+		counterButton = SKSpriteNode(imageNamed: "CounterButton")
+		counterButton.name = "counterButton"
+		counterButton.position = CGPoint(x: 100, y: -300)
+		counterButton.zPosition = 2
+		cam.addChild(counterButton)
+		
 		throwHelper.name = "throwHelper"
 		throwHelper.position = CGPoint(x: 200, y: -300)
 		cam.addChild(throwHelper)
@@ -214,9 +221,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		
-		let enemy = enemyArray[0].node.position
-		hypotf(Float(humanoid.node().position.x - enemy.x), Float(humanoid.node().position.y - enemy.y))
 		for touch in touches {
 			let location = touch.location(in: self)
 			
@@ -230,6 +234,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 			}
 			
 			if (!isPunch && !dashActive) {
+				
+				if (objects.contains(throwButton)) {
+					humanoid.beforeThrow()
+				}
+				
+				if (objects.contains(counterButton)) {
+					let (target, dist) = closestEnemy(node: humanoid.node())
+					print(dist)
+					if target.name == "Fake" { return }
+					if dist > 50 { return }
+					if dist < -50 { return }
+					if target.windUpActive {
+						removeEnemy(enemy: target)
+						if dist > 0 {
+							print("Right")
+							humanoid.counter(dir: 0)
+						} else {
+							print("Left")
+							humanoid.counter(dir: 1)
+						}
+					}
+					
+					
+					
+					// Play animation not yet made
+				}
+				
 				if (objects.contains(leftPunch)) {
 					isPunch = true
 					if (humanoid.getWeapon().getType() == .ranged) {
@@ -293,9 +324,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 			}
 			
 			if (!isPunch && !dashActive) {
-				if (objects.contains(throwButton)) {
-					humanoid.beforeThrow()
-				}
+				
+				
 			}
 			if (!isPunch) {
 				if (objects.contains(invLeft)) {
@@ -366,24 +396,25 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     override func update(_ currentTime: TimeInterval) {
 		
-		let ele = childNode(withName: "elevator")
-		
-		let horo = ((ele?.position.x)! - 50) ... ((ele?.position.x)! + 50)
-		let vert = ((ele?.position.y)! ... (ele?.position.y)! + 80)
-		if (horo ~= humanoid.node().position.x && vert.contains(humanoid.node().position.y)) {
-			ele?.physicsBody?.pinned = false
-			ele?.physicsBody?.velocity.dy = 500
-			if (ele!.position.y > CGFloat(790)) {
-				ele?.physicsBody?.velocity.dy = 0
-				ele?.physicsBody!.pinned = true
-			}
-		} else if ((92...95).contains(Int((ele?.position.y)!))){
-			ele?.physicsBody?.velocity.dy = 0
-			ele?.physicsBody?.pinned = true
-		} else {
-			ele?.physicsBody?.pinned = false
-			ele?.physicsBody?.velocity.dy = -200
-		}
+		// CODE FOR ELEVATOR
+//		let ele = childNode(withName: "elevator")
+//
+//		let horo = ((ele?.position.x)! - 50) ... ((ele?.position.x)! + 50)
+//		let vert = ((ele?.position.y)! ... (ele?.position.y)! + 80)
+//		if (horo ~= humanoid.node().position.x && vert.contains(humanoid.node().position.y)) {
+//			ele?.physicsBody?.pinned = false
+//			ele?.physicsBody?.velocity.dy = 500
+//			if (ele!.position.y > CGFloat(790)) {
+//				ele?.physicsBody?.velocity.dy = 0
+//				ele?.physicsBody!.pinned = true
+//			}
+//		} else if ((92...95).contains(Int((ele?.position.y)!))){
+//			ele?.physicsBody?.velocity.dy = 0
+//			ele?.physicsBody?.pinned = true
+//		} else {
+//			ele?.physicsBody?.pinned = false
+//			ele?.physicsBody?.velocity.dy = -200
+//		}
 		
 		let constraint = SKConstraint.distance(SKRange(constantValue: 0), to: humanoid.node())
 		cam.constraints = [constraint]
@@ -405,18 +436,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     }
 	
 	func didBegin(_ contact: SKPhysicsContact) {
-		if contact.bodyA.node == nil {
-			print("crash")
-			return
-		}
-		if contact.bodyA.node == nil {
-			print("crash")
-			return
-		}
-		let bodyA = contact.bodyA.node!
-		let bodyB = contact.bodyB.node!
+		guard let bodyA = contact.bodyA.node else { return }
+		guard let bodyB = contact.bodyB.node else { return }
+		
+//		print("A", bodyA)
+//		print("B", bodyB)
 		//let collision:UInt32 = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
-		var enemy = enemyArray[0]
+		var enemy:Enemy = Enemy(name: "Fake", health: 0, target: humanoid.node(), type: Enemy.enemyType.melee)
 		for i in enemyArray {
 			if (i.node == bodyB) {
 				enemy = i
@@ -424,8 +450,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 				enemy = i
 			}
 		}
-		//print("B", bodyB.name)
-		//print("A", bodyA.name)
+		if enemy.name == "Fake" {
+			return
+		}
+
 		if (bodyB == childNode(withName: "dagger") && bodyA == humanoid.node()) {
 			humanoid.add(weapon: weaponDict[bodyB as? SKSpriteNode]!)
 			bodyB.removeFromParent()
@@ -449,8 +477,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 			displayInventory()
 		}
 		
-		if ((bodyB.name == "bullet" && bodyA.name == "wall") || (bodyA.name == "wall" && bodyB.name == "bullet")) {
+		if (bodyB.name == "bullet" && bodyA.name == "wall") {
 			bodyB.removeFromParent()
+		} else if (bodyA.name == "wall" && bodyB.name == "bullet") {
+			bodyA.removeFromParent()
+		}
+		
+		if (bodyB.name == "bulletEnemy" && bodyA.name == "wall") {
+			bodyB.removeFromParent()
+		} else if (bodyA.name == "wall" && bodyB.name == "bulletEnemy") {
+			bodyA.removeFromParent()
+		}
+		
+		if (bodyB.name == "bulletEnemy" && bodyA.name == "bullet") || (bodyA.name == "bullet" && bodyB.name == "bullet") {
+			bodyB.removeFromParent()
+			bodyA.removeFromParent()
 		}
 		
 		var weapon = Weapon()
@@ -485,7 +526,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 			}
 		}
 		
-		if ((enemy.node == bodyB && bodyA.name == "bullet") || (bodyB.name == "bullet" && bodyA == enemy.node)) {
+		if (enemy.node == bodyB && bodyA.name == "bullet") {
+			bodyA.removeFromParent()
+			enemy.setHealth(enemy.getHealth() - humanoid.getWeapon().getDamage())
+			if (enemy.getHealth() <= 0) {
+				enemy.node.removeFromParent()
+			}
+		} else if (bodyB.name == "bullet" && bodyA == enemy.node) {
 			bodyB.removeFromParent()
 			enemy.setHealth(enemy.getHealth() - humanoid.getWeapon().getDamage())
 			if (enemy.getHealth() <= 0) {
@@ -493,8 +540,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 			}
 		}
 		
-		if ((humanoid.node() == bodyB && bodyA.name == "bulletEnemy") || (bodyB.name == "bulletEnemy" && bodyA == humanoid.node())) {
-			bodyB.removeFromParent()
+		if (humanoid.node() == bodyB && bodyA.name == "bulletEnemy") {
+			bodyA.removeFromParent()
+			
+			humanoid.setHealth(humanoid.getHealth() - 20)
+			if (humanoid.getHealth() <= 0) {
+				humanoid.node().removeFromParent()
+			}
+		} else if (bodyB.name == "bulletEnemy" && bodyA == humanoid.node()) {
+			bodyA.removeFromParent()
 			
 			humanoid.setHealth(humanoid.getHealth() - 20)
 			if (humanoid.getHealth() <= 0) {
@@ -556,4 +610,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         enemy.node.position = CGPoint(x: pos.x, y: pos.y)
         self.addChild(enemy.node)
     }
+	
+	func closestEnemy(node: SKSpriteNode) -> (Enemy, CGFloat) {
+		var closestDist = CGFloat.greatestFiniteMagnitude
+		var closestEnemy:Enemy? = nil
+		for x in enemyArray {
+			let xDist = node.position.x - x.node.position.x
+			let yDist = node.position.y - x.node.position.y
+			var dist = sqrt((xDist * yDist) + (xDist + yDist))
+			if yDist < 0.5 {
+				dist = xDist
+			}
+			if dist < closestDist {
+				closestEnemy = x
+				closestDist = dist
+			}
+		}
+		return (closestEnemy ?? Enemy(name: "Fake", health: 0, target: humanoid.node(), type: Enemy.enemyType.melee), closestDist)
+	}
+	
+	func removeEnemy(enemy: Enemy) {
+		if let index = enemyArray.firstIndex(of: enemy) {
+			enemyArray.remove(at: index)
+		}
+		enemy.node.removeFromParent()
+	}
 }

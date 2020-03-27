@@ -35,6 +35,7 @@ class Humanoid: NSObject, SKPhysicsContactDelegate {
 	private var dirChanged = false
 	private var throwActive = false
 	private var defaultPB:SKPhysicsBody
+	public var counterActive = false
 	
 	
 	public override init() {
@@ -161,12 +162,14 @@ class Humanoid: NSObject, SKPhysicsContactDelegate {
 			//weapon.node.xScale = weapon.node.xScale * -1
 			attack.append(right)
 		}
+		let speed = humanoid.physicsBody?.velocity
+		weapon.node.physicsBody?.velocity = speed!
 		humanoid.physicsBody = weapon.node.physicsBody!
-		
-		GameScene.DefaultPhysics(humanoid.physicsBody!)
+		//GameScene.DefaultPhysics(humanoid.physicsBody!)
 		humanoid.physicsBody!.categoryBitMask = GameScene.CollisionTypes.humanoid.rawValue
 		humanoid.physicsBody!.collisionBitMask = GameScene.CollisionTypes.wall.rawValue
 		humanoid.physicsBody!.contactTestBitMask = GameScene.CollisionTypes.enemy.rawValue
+		
 		
 		humanoid.run(SKAction.animate(with: attack, timePerFrame: 0.2, resize: false, restore: true), completion: {
 			Humanoid.HumanoidDefaultPhysics(self.humanoid)
@@ -393,6 +396,39 @@ class Humanoid: NSObject, SKPhysicsContactDelegate {
 			return nil
 		}
 		return lastThrown
+	}
+	
+	func counter(dir: CGFloat) {
+		if (animationActive || counterActive) {
+			return
+		}
+		
+		animationActive = true
+		counterActive = true
+		var counterFrames:[SKTexture] = []
+		if dir == 0 {
+			let counterAtlas = SKTextureAtlas(named: "Counter.atlas")
+			let numImages = counterAtlas.textureNames.count
+			for tx in 1...numImages {
+				let textName = "counter\(tx)"
+				counterFrames.append(counterAtlas.textureNamed(textName))
+			}
+		} else if dir == 1 {
+			let counterAtlas = SKTextureAtlas(named: "CounterLeft.atlas")
+			let numImages = counterAtlas.textureNames.count
+			for tx in 1...numImages {
+				let textName = "counter\(tx)"
+				counterFrames.append(counterAtlas.textureNamed(textName))
+			}
+		}
+		humanoid.run(SKAction.animate(with: counterFrames, timePerFrame: 0.15), completion: {
+			//self.counterActive = false
+			DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 5) {
+				self.counterActive = false
+				print("DONE")
+			}
+			self.animationActive = false
+		})
 	}
 	
 	func cancelThrow() {
